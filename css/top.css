@@ -471,16 +471,16 @@
   object-fit: cover;
 }
 
-.swiper-slide {
-  margin: 0 2%;
-}
-
 .swiper {
   width: 150%;
   height: auto;
   position: absolute;
   left: 0;
   bottom: 24%;
+}
+
+.swiper.swiper_shop {
+  padding-bottom: 5%;
 }
 
 .wrap .sec-use .movie {
@@ -632,8 +632,18 @@
   position: absolute;
   bottom: 50%;
   /* left: 85%; */
-  right: 5%;
+  right: 3%;
   transform: scale(0.8);
+  width: 120px;
+}
+
+.tuika_left {
+  position: absolute;
+  bottom: 50%;
+  left: -5%;
+  transform: scale(0.8);
+  width: 130px;
+  z-index: 999;
 }
 
 .inner_tuika {
@@ -671,9 +681,14 @@
   }
   .tuika_right {
     /* left: 87%; */
-    right: -2%;
+    right: -6%;
     bottom: 45%;
     transform: scale(0.5);
+    width: 20vw;
+  }
+  .tuika_left {
+    bottom: 49%;
+    width: 13vw;
   }
   .inner_tuika {
     padding-right: initial !important;
