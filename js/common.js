@@ -41,10 +41,9 @@ $(function () {
         dots: 1,
         arrows: !0,
         slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 2000,
-        cssEase: "linear",
+        autoplay: false,
+        speed: 700,
+        // cssEase: "linear",
         prevArrow: '<div class="btn-prev"></div>',
         nextArrow: '<div class="btn-next"></div>',
         responsive: [
@@ -59,9 +58,7 @@ $(function () {
         dots: false,
         arrows: true,
         slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 100,
-        speed: 1000,
+        autoplay: false,
         centerMode: !0,
         centerPadding: "200px",
         responsive: [
@@ -273,4 +270,16 @@ let swiper_shop = new Swiper(".swiper_shop", {
     autoplay: {
         delay: 0, // 途切れなくループ
     },
+});
+
+
+
+// ========== トップボタン非表示表示切り替え
+window.addEventListener('scroll', function() {
+    var backToTopButton = document.querySelector('.fv_btn_back');
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add('active');
+    } else {
+        backToTopButton.classList.remove('active');
+    }
 });
