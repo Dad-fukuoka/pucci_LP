@@ -30,7 +30,7 @@
   transition: all 1s;
 }
 .wrap .fv .fv_btn_back .container {
-  height: 150px;
+  height: 100%;
   padding: 0 5%;
   display: flex;
   flex-direction: row;
@@ -52,6 +52,20 @@
 .wrap .fv .fv_btn_back.active {
   opacity: 1;
   transition: all 1s;
+}
+@media (max-width: 890px) {
+  .wrap .fv .fv_btn_back {
+    height: 16vw;
+  }
+  .wrap .fv .fv_btn_back .container {
+    padding: 0 2%;
+  }
+  .wrap .fv .fv_btn_back .container .logo {
+    width: 25vw;
+  }
+  .wrap .fv .fv_btn_back .fv_btn img {
+    width: 30vw;
+  }
 }
 
 #fv_forword {

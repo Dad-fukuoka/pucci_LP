@@ -31,7 +31,7 @@
       opacity: 0;
       transition: all 1s;
       .container {
-        height: 150px;
+        height: 100%;
         padding: 0 5%;
         display: flex;
         flex-direction: row;
@@ -54,6 +54,22 @@
     .fv_btn_back.active {
       opacity: 1;
       transition: all 1s;
+    }
+    @media(max-width:890px){
+      .fv_btn_back {
+        height: 16vw;
+        .container {
+          padding: 0 2%;
+          .logo {
+            width: 25vw;
+          }
+        }
+        .fv_btn {
+          img {
+            width: 30vw;
+          }
+        }
+      }
     }
   }
 }
