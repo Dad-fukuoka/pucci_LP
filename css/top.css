@@ -983,15 +983,9 @@ footer .container ul li a {
 footer .container ul li + li {
   border-left: 1px solid #808080;
 }
-footer .container ul li:first-child {
-  border-left: 1px solid #808080;
-}
-footer .container ul li:last-child {
-  border-right: 1px solid #808080;
-}
 @media (max-width: 563px) {
-  footer .container ul li:nth-child(4) {
-    border-right: 1px solid #808080;
+  footer .container ul li:nth-child(5) {
+    border-left: none;
   }
   footer .container ul li {
     margin-bottom: 3%;
@@ -999,10 +993,8 @@ footer .container ul li:last-child {
 }
 @media (max-width: 412px) {
   footer .container ul li:nth-child(4) {
-    border-right: none;
-  }
-  footer .container ul li:nth-child(3) {
     border-right: 1px solid #808080;
+    border-left: none;
   }
 }
 @media (max-width: 768px) {

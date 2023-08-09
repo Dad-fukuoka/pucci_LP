@@ -988,15 +988,9 @@ footer {
           li+ li {
               border-left: 1px solid #808080;
           }
-          li:first-child{
-              border-left: 1px solid #808080;
-          }
-          li:last-child{
-              border-right: 1px solid #808080;
-          }
           @media(max-width:563px){
-              li:nth-child(4) {
-                  border-right: 1px solid #808080;
+              li:nth-child(5) {
+                  border-left: none;
               }
               li {
                   margin-bottom: 3%;
@@ -1004,10 +998,8 @@ footer {
           }
           @media(max-width:412px){
               li:nth-child(4) {
-                  border-right: none;
-              }
-              li:nth-child(3) {
                   border-right: 1px solid #808080;
+                  border-left: none;
               }
           }
           @media(max-width:768px){
