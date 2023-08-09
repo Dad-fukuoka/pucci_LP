@@ -745,54 +745,10 @@
 } */
 footer {
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  background: #000;
+  // background: #000;
   padding: 30px 0 10px;
 }
 
-footer ul {
-  margin-bottom: 30px;
-}
-
-footer ul li {
-  position: relative;
-  display: inline-block;
-  margin-right: 30px;
-}
-
-footer ul li:after {
-  content: "｜";
-  font-size: 16px;
-  color: #fff;
-  position: absolute;
-  right: -25px;
-  top: 0;
-}
-
-footer ul li:last-child {
-  margin-right: 0;
-}
-
-footer ul li:last-child:after {
-  display: none;
-}
-
-footer ul li a {
-  font-size: 16px;
-  color: #fff;
-}
-
-footer .logo {
-  margin-bottom: 25px;
-}
-
-footer .logo img {
-  width: 118px;
-}
-
-footer p {
-  font-size: 12px;
-  color: #fff;
-}
 
 @-webkit-keyframes jump {
   0% {
@@ -1035,4 +991,84 @@ footer p {
   .sns img {
     width: 40%;
   }
+}
+
+// ============================== 共通footer ==============================
+footer {
+  .container {
+      text-align: center;
+      margin: 5% 0 2%!important;
+      ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding-left: 0;
+          li {
+              list-style: none;
+              padding: 0 25px;
+              a {
+                color: #808080;
+              }
+          }
+          li+ li {
+              border-left: 1px solid #808080;
+          }
+          li:first-child{
+              border-left: 1px solid #808080;
+          }
+          li:last-child{
+              border-right: 1px solid #808080;
+          }
+          @media(max-width:563px){
+              li:nth-child(4) {
+                  border-right: 1px solid #808080;
+              }
+              li {
+                  margin-bottom: 3%;
+              }
+          }
+          @media(max-width:412px){
+              li:nth-child(4) {
+                  border-right: none;
+              }
+              li:nth-child(3) {
+                  border-right: 1px solid #808080;
+              }
+          }
+          @media(max-width:768px){
+              li {
+                  font-size: 12px;
+                  padding: 0 15px;
+              }
+          }
+      }
+      .logo {
+          margin-top: 50px;
+          img {
+              width:  350px;
+          }
+          @media(max-width:768px){
+              img {
+                  width: 200px;
+              }
+          }
+      }
+      .copyright {
+          font-size: 12px;
+          margin-top: 30px;
+      }
+  }
+  @media(max-width:768px){
+      .container {
+          margin: 10% auto 10%!important;
+          .logo {
+              margin-top: 7%;
+          }
+          .copyright {
+              margin-top: 5%;
+          }
+      }
+  }
+  
 }
